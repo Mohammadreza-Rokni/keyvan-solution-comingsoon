@@ -378,9 +378,9 @@ button,
   content: "\f09b";
 }
 
-.stackoverflow::before {
+.telegram::before {
   font-family: "Font Awesome 5 Brands";
-  content: "\f16c";
+  content: "\f2c6";
 }
 
 .youtube::before {
