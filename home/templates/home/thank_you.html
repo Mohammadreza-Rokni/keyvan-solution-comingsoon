@@ -1,5 +1,5 @@
+
 {% load static %}
-{% load widget_tweaks %}
 <!doctype html>
 <html lang=en>
 <head>
@@ -39,18 +39,9 @@
                     <div class="logo-container">
                         <img src="{% static 'images/k1s_logo.png' %}" alt="Your Logo" class="logo">
                     </div>
-                    <h1>. . . منتظرمان باشید</h1>
-                    <p class="slogan">
-                        در حال طراحی جامع ترین سایت ایمنی، بهداشت و محیط زیست هستیم <br>
-                        شگفت زده خواهید شد<br>
-                        برای استعلام و ثبت سفارش با شماره <a class="phone-number" href="tel:09309694154">۰۹۳۰۹۶۹۴۱۵۴</a> تماس حاصل نمایید<br>
-                        برای به روز ماندن در خبرنامه ما عضو شوید
-                    </p>
-                    <form class="form-subscribe" method="post" action="{% url 'home:coming_soon' %}">
-                        {% csrf_token %}
-                        {{ form.email|attr:"placeholder:ایمیل را وارد کنید"|add_class:"form" }}
-                        <button type="submit">عضویت</button>
-                    </form>
+                    <h1>متشکریم</h1>
+                    <p class="slogan">از اینکه در خبرنامه ما عضو شدید سپاسگزاریم</p>
+           
                 </div>
                 <ul class=icon-list>
                     <li class=icon><a class=linkedin href=google.com></a></li>

@@ -1,8 +1,17 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from .forms import SubscribeForm
+from .models import Subscriber
 
+def coming_soon(request):
+    form = SubscribeForm()
+    if request.method == 'POST':
+        form = SubscribeForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            subscriber = Subscriber.objects.create(email=email)
+            subscriber.save()
+            return render(request, 'home/thank_you.html')
+    return render(request, 'home/index.html', {'form': form})
 
-# Create your views here.
-
-class HomeView(TemplateView):
-    template_name = 'home/index.html'
+def handle_404(request, invalid_url):
+    return render(request, '404/404.html')
