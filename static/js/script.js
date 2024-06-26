@@ -11,9 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
-var yourDate = "2024-07-23" 
+var yourDate = "2024-08-04" 
 ! function (e) {
     var t = {};
 
